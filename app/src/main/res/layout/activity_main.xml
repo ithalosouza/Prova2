@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activites.MainActivity"
+    android:background="@drawable/graddient"
+    >
+
+    <TextView
+        android:id="@+id/limiteDisponivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/teste"
+        android:layout_below="@id/limiteDisponivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TESTE"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/valor"
+        android:layout_below="@id/teste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/vencimento"
+        android:layout_below="@id/valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFatura"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="28dp"
+        tools:listitem="@layout/item_fatura"/>
+
+
+</RelativeLayout>
